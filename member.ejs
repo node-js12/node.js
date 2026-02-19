@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title><%= member.name %> - Наша бригада</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="light">
+    <div class="container">
+        <a href="/" class="back">⬅ Назад до бригади</a>
+        
+        <div class="profile">
+            <img src="<%= member.photo %>" alt="<%= member.name %>" class="profile-img">
+            <div class="profile-info">
+                <h1><%= member.name %></h1>
+                <div class="info-item">
+                    <strong>Група:</strong>
+                    <span><%= member.group %></span>
+                </div>
+                <div class="info-item">
+                    <strong>Курс:</strong>
+                    <span><%= member.course %> курс</span>
+                </div>
+                <div class="info-item">
+                    <strong>Факультет:</strong>
+                    <span><%= member.faculty %></span>
+                </div>
+                <div class="info-item">
+                    <strong>Кафедра:</strong>
+                    <span><%= member.department %></span>
+                </div>
+                <div class="info-item">
+                    <strong>Форма навчання:</strong>
+                    <span><%= member.form %></span>
+                </div>
+                <div class="info-item">
+                    <strong>Спеціальність:</strong>
+                    <span><%= member.specialty %></span>
+                </div>
+                <div class="info-item">
+                    <strong>Освітня програма:</strong>
+                    <span><%= member.educationalProgram %></span>
+                </div>
+                <div class="info-item">
+                    <strong>Вік:</strong>
+                    <span><%= member.age %> років</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
